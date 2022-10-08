@@ -22,9 +22,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+
                 <a href="#"><i id="close" class="fa-solid fa-xmark"></i></a>
             </ul>
             <div id="mobile">
@@ -35,69 +36,83 @@
     </section>
     
     <section id="page-header" class="about-header">
-        <h2>#KnowUs</h2>
+        <h2>#Cart</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        <p>Add your coupon code & SAVE upto 70%!</p>
     </section>
     
-    <section id="about-header" class="section-p1">
-        <img src="img/about/a6.jpg" alt="">
-        <div>
-            <h2>Who We Are?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam mauris, ornare in lectus in, sagittis mollis orci. Mauris a convallis quam. Cras pretium tempus nisi, in fringilla odio. Integer ullamcorper diam vel eleifend pellentesque. Mauris et accumsan purus, nec porttitor ligula. Donec quis nisl sed massa aliquet sodales. Suspendisse potenti. Morbi posuere cursus ex. Fusce sollicitudin nisi ac volutpat accumsan. Nam imperdiet quis ante gravida ullamcorper. Vivamus rutrum magna felis, et lacinia urna vulputate eget. Fusce vestibulum, nibh quis imperdiet hendrerit, neque magna fringilla augue, sit amet tincidunt turpis lacus id est.</p>
-            <abbr title="">Create stunning images with as much or as little crontol as you like thanks to a choice of basic and creative modes.</abbr>
+    <section id="cart" class="section-p1">
 
-            <br><br>
-
-            <marquee bgcolor="#ccc" width="100%" loop="-1" scrollamount="5">Create stunning images with as much or as little crontol as you like thanks to a choice of basic and creative modes.</marquee>
-
-        </div>
-    </section>
-
-    <section id="about-app" class="section-p1">
-        <h1>Download Our <a href="#">App</a></h1>
-        <div class="video">
-            <video autoplay muted loop src="img/about/1.mp4"></video>
-        </div>
-    </section>
-
-    <section id="feature" class="section-p1">
-
-        <div class="fe-box">
-            <img src="img/features/f1.png">
-            <h6>Free shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f2.png">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f3.png">
-            <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f4.png">
-            <h6>Promotions</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f5.png">
-            <h6>Happy Sell</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f6.png">
-            <h6>F24/7 Support</h6>
-        </div>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Products</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa-regular fa-circle-xmark"></i></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$118.00</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-circle-xmark"></i></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$118.00</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-circle-xmark"></i></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$118.00</td>
+                </tr>
+            </tbody>
+        </table>
 
     </section>
 
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-mail updates about our lates shop and <span>special offers.</span></p>
+    <section id="cart-coupon-total" class="section-p1">
+
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
         </div>
-        <div class="form">
-            <input type="text" placeholder="Your Email address">
-            <button class="normal">Sing Up</button>
+
+        <div class="cart-total">
+            <h3>Cart Totals</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Cart Totals</td>
+                        <td>$ 335</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$ 335</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
         </div>
     </section>
 
@@ -118,7 +133,8 @@
                     <i class="fa-brands fa-pinterest-p"></i>
                     <i class="fa-brands fa-youtube"></i>
                 </div>
-            </div>
+        </div>
+        
         </div>
 
         <div class="col">
